@@ -355,9 +355,6 @@ $SMG Classic Controller (Nvidia Style)
 0x80002984:dword:0x809D0004
 0x80002988:dword:0x7C840214
 0x8000298C:dword:0x4E800020
-0x80002990:dword:0x41A00000
-0x80002994:dword:0xBF800000
-0x80002998:dword:0x3F800000
 0x8000299C:dword:0x8803005F
 0x800029A0:dword:0x2C000008
 0x800029A4:dword:0x8803005E
@@ -390,22 +387,9 @@ $SMG Classic Controller (Nvidia Style)
 0x803AAA34:dword:0x60000000
 0x803AAFB8:dword:0x4BC55B94
 0x803ABD0C:dword:0x4BC56B8C
-0x803ABE34:dword:0x4BC56B69
 0x803ABE6C:dword:0x4BC569F8
-0x803ABE7C:dword:0x4BC56B21
 0x803ABEC4:dword:0x4BC56980
 0x803ABEC8:dword:0x60000000
-0x803ABED8:dword:0x4BC569D4
-0x803ABEDC:dword:0x60000000
-0x803ABEE0:dword:0x60000000
-0x803ABEE4:dword:0x60000000
-0x803ABEE8:dword:0x60000000
-0x803ABEEC:dword:0x4BC56A24
-0x803ABEF0:dword:0x60000000
-0x803ABEF4:dword:0x60000000
-0x803ABEF8:dword:0x60000000
-0x803ABEFC:dword:0x60000000
-0x803ABF00:dword:0x60000000
 0x803ABF64:dword:0x4BC56914
 0x803AC8C0:dword:0x4BC542E0
 0x803D2184:dword:0x4BC30680
@@ -793,9 +777,6 @@ $SMG Classic Controller (All-Stars Style)
 0x80002984:dword:0x809D0004
 0x80002988:dword:0x7C840214
 0x8000298C:dword:0x4E800020
-0x80002990:dword:0x41A00000
-0x80002994:dword:0xBF800000
-0x80002998:dword:0x3F800000
 0x8000299C:dword:0x8803005F
 0x800029A0:dword:0x2C000008
 0x800029A4:dword:0x8803005E
@@ -828,22 +809,9 @@ $SMG Classic Controller (All-Stars Style)
 0x803AAA34:dword:0x60000000
 0x803AAFB8:dword:0x4BC55B94
 0x803ABD0C:dword:0x4BC56B8C
-0x803ABE34:dword:0x4BC56B69
 0x803ABE6C:dword:0x4BC569F8
-0x803ABE7C:dword:0x4BC56B21
 0x803ABEC4:dword:0x4BC56980
 0x803ABEC8:dword:0x60000000
-0x803ABED8:dword:0x4BC569D4
-0x803ABEDC:dword:0x60000000
-0x803ABEE0:dword:0x60000000
-0x803ABEE4:dword:0x60000000
-0x803ABEE8:dword:0x60000000
-0x803ABEEC:dword:0x4BC56A24
-0x803ABEF0:dword:0x60000000
-0x803ABEF4:dword:0x60000000
-0x803ABEF8:dword:0x60000000
-0x803ABEFC:dword:0x60000000
-0x803ABF00:dword:0x60000000
 0x803ABF64:dword:0x4BC56914
 0x803AC8C0:dword:0x4BC542E0
 0x803D2184:dword:0x4BC30680
@@ -879,6 +847,77 @@ $SMG Classic Controller (All-Stars Style)
 0x8039AA48:dword:0x60000000
 0x8039AB0C:dword:0x60000000
 0x804A432C:dword:0x60000000
+
+$SMG Right-Stick Pointer
+# Enable this patch to control the pointer with the Classic Controller right stick.
+# Leave it disabled to use Dolphin IR.
+0x803ABE34:dword:0x4BC56B69
+0x803ABE7C:dword:0x4BC56B21
+0x803ABED8:dword:0x4BC569D4
+0x803ABEDC:dword:0x60000000
+0x803ABEE0:dword:0x60000000
+0x803ABEE4:dword:0x60000000
+0x803ABEE8:dword:0x60000000
+0x803ABEEC:dword:0x4BC56A24
+0x803ABEF0:dword:0x60000000
+0x803ABEF4:dword:0x60000000
+0x803ABEF8:dword:0x60000000
+0x803ABEFC:dword:0x60000000
+0x803ABF00:dword:0x60000000
+
+$SMG Pointer Speed - 1x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x41A00000
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 1.25x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x41800000
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 1.5x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x41555555
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 1.75x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x4136DB6E
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 2x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x41200000
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 2.25x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x410E38E4
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 2.5x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x41000000
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 2.75x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x40E8BA2F
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
+
+$SMG Pointer Speed - 3x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002990:dword:0x40D55555
+0x80002994:dword:0xBF800000
+0x80002998:dword:0x3F800000
 
 $SMG Swap L and ZL
 # Swap L with ZL
