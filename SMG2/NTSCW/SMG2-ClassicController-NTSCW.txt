@@ -262,9 +262,6 @@ $SMG2 Classic Controller (Nvidia Style)
 0x80002844:dword:0x4802BF0D
 0x80002848:dword:0xD0250024
 0x8000284C:dword:0x484CCE6C
-0x80002850:dword:0x41A00000
-0x80002854:dword:0xBF800000
-0x80002858:dword:0x3F800000
 0x8000285C:dword:0x8806005F
 0x80002860:dword:0x2C000008
 0x80002864:dword:0x8806005E
@@ -334,10 +331,6 @@ $SMG2 Classic Controller (Nvidia Style)
 0x804CE444:dword:0x40810014
 0x804CF668:dword:0x4BB313B8
 0x804CF674:dword:0x48000010
-0x804CF6AC:dword:0x60000000
-0x804CF6B0:dword:0x7DC802A6
-0x804CF6B4:dword:0x4BB33128
-0x804CF6B8:dword:0x7DC803A6
 0x804CF724:dword:0x38000001
 0x804CF734:dword:0x4BB33128
 0x804CF74C:dword:0x4BB3142C
@@ -604,9 +597,6 @@ $SMG2 Classic Controller (All-Stars Style)
 0x80002844:dword:0x4802BF0D
 0x80002848:dword:0xD0250024
 0x8000284C:dword:0x484CCE6C
-0x80002850:dword:0x41A00000
-0x80002854:dword:0xBF800000
-0x80002858:dword:0x3F800000
 0x8000285C:dword:0x8806005F
 0x80002860:dword:0x2C000008
 0x80002864:dword:0x8806005E
@@ -676,10 +666,6 @@ $SMG2 Classic Controller (All-Stars Style)
 0x804CE444:dword:0x40810014
 0x804CF668:dword:0x4BB313B8
 0x804CF674:dword:0x48000010
-0x804CF6AC:dword:0x60000000
-0x804CF6B0:dword:0x7DC802A6
-0x804CF6B4:dword:0x4BB33128
-0x804CF6B8:dword:0x7DC803A6
 0x804CF724:dword:0x38000001
 0x804CF734:dword:0x4BB33128
 0x804CF74C:dword:0x4BB3142C
@@ -687,6 +673,68 @@ $SMG2 Classic Controller (All-Stars Style)
 0x804B7E00:dword:0x60000000
 0x804B7EC4:dword:0x60000000
 0x805B67B4:dword:0x60000000
+
+$SMG2 Right-Stick Pointer
+# Enable this patch to control the pointer with the Classic Controller right stick.
+# Leave it disabled to use Dolphin IR.
+0x804CF6AC:dword:0x60000000
+0x804CF6B0:dword:0x7DC802A6
+0x804CF6B4:dword:0x4BB33128
+0x804CF6B8:dword:0x7DC803A6
+
+$SMG2 Pointer Speed - 1x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x41A00000
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 1.25x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x41800000
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 1.5x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x41555555
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 1.75x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x4136DB6E
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 2x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x41200000
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 2.25x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x410E38E4
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 2.5x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x41000000
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 2.75x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x40E8BA2F
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
+
+$SMG2 Pointer Speed - 3x
+# Enable exactly one pointer-speed patch when using the right-stick pointer.
+0x80002850:dword:0x40D55555
+0x80002854:dword:0xBF800000
+0x80002858:dword:0x3F800000
 
 $SMG2 Swap L and ZL
 # Swap L with ZL
